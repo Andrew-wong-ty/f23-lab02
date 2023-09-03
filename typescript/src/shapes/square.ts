@@ -1,8 +1,10 @@
+import Shape from "./shape"
+
 function square(sideLen: number): Shape {
+    let squareSideLen = sideLen; // make sideLen private
     return {
-        sideLen,
         computeArea: function (): number {
-            return sideLen * sideLen
+            return squareSideLen * squareSideLen
         }
     }
 }
