@@ -1,5 +1,5 @@
 interface Shape {
-    computeArea: ()=> number;
+    computeArea: ()=> number
 }
 
-export default Shape;
+export default Shape

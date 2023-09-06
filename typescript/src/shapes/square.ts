@@ -1,7 +1,7 @@
-import Shape from "./shape"
+import Shape from './shape'
 
-function square(sideLen: number): Shape {
-    let squareSideLen = sideLen; // make sideLen private
+function newSquare(sideLen: number): Shape {
+    const squareSideLen = sideLen // make sideLen private
     return {
         computeArea: function (): number {
             return squareSideLen * squareSideLen
@@ -9,4 +9,4 @@ function square(sideLen: number): Shape {
     }
 }
 
-export { square }
+export { newSquare }
